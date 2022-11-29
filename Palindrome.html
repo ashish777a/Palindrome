@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Palindrome</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <input type="text" placeholder="write a text">
+        <button>Check Palindrome</button>
+        <p></p>
+    </div>
+    <script>
+        let inp = document.querySelector("input")
+        let btn = document.querySelector("button")
+        let para = document.querySelector("p")
+        btn.onclick = () => {
+            let some = inp.value.toLowerCase();
+            let war = some.split("").reverse("").join("")
+            if (some=== war) {
+             
+                para.innerHTML = "write is polindrome"
+            }
+                else {
+                    para.innerHTML = "write is  not polindrome"
+                }
+            }
+        
+    </script>
+</body>
+
+</html>
